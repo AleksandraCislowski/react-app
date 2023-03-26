@@ -14,14 +14,20 @@ function Todo(props) {
   }
 
   return (
-    <div className='card'>
+    <div className='card' style={{ marginBottom: 6 }}>
       <h2>{props.text}</h2>
       <div className='actions'>
         <button className='btn' onClick={deleteHandler}>
           Delete
         </button>
       </div>
-      {modalIsOpen && <Modal closeModal={closeModal} />}
+      {modalIsOpen && (
+        <Modal
+          closeModal={closeModal}
+          deleteTodo={props.deleteTodo}
+          text={props.text}
+        />
+      )}
       {modalIsOpen && <Backdrop closeModal={closeModal} />}
     </div>
   );
