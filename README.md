@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+My first react app made to learn how to build simple components and combine them togheter.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
